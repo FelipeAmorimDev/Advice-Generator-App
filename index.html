@@ -11,8 +11,25 @@
       href="./assets/favicon-32x32.png"
     />
     <title>Advice generator app</title>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <main class="main__container" aria-label="advice__text">
+      <div class="advice__card">
+        <span>ADVICE #117</span>
+        <h1 class="advice__text">
+          “It is easy to sit up and take notice, what's difficult is getting up
+          and taking action.”
+        </h1>
+        <picture class="advice__separator">
+          <source media="(min-width:500px)" srcset="./assets/pattern-divider-desktop.svg">
+          <img src="./assets/pattern-divider-mobile.svg" aria-hidden="">
+        </picture>
+        <button class="advice__generator">
+          <img src="./assets/icon-dice.svg" alt="Advice Generator">
+        </button>
+      </div>
+    </main>
     <script src="./app.js"></script>
   </body>
 </html>
